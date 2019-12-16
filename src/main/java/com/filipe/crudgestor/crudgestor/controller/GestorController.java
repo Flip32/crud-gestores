@@ -44,6 +44,7 @@ public class GestorController {
 //	Save
 	@RequestMapping("/save")
 	public ModelAndView save(@ModelAttribute("gestor")@Valid Gestor gestorObj, BindingResult result) {
+		String erroForm = "Preencha corretamente o formulario";
 		if(result.hasErrors()) {
 			if(gestorObj.getId() == null){
 				System.out.println("algo deu errado sem id");

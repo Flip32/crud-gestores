@@ -37,6 +37,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 col-form-label">Matrícula*</label>
                     <form:input class="form-control" path="matricula"/>
+                    <form:errors class="form-control" cssClass="error"/>
                 </div>
 
                 <div class="form-group fontForm">
@@ -47,11 +48,13 @@
                         <form:option value="R">Recursos humanos</form:option>
                         <form:option value="H">Help desk</form:option>
                     </form:select><br/>
+                    <form:errors class="form-control" cssClass="error"/>
                 </div>
 
                 <div class="form-group fontForm">
                     <div class="col-sm-4 col-form-label">Data Nasc.*</div>
                     <form:input class="form-control" path="datanascimento" type="date"/>
+                    <form:errors class="form-control" cssClass="error"/>
                 </div>
 
             <form:hidden path="id"/>
@@ -60,7 +63,7 @@
                             style="background-color: #b10000; margin-right: 1em"
                     >Save</button>
                     <button  type="button" class="btn btn-primary"
-                            onclick="window.location.href='http://localhost:8080/'">Cancelar
+                            onclick="window.location.href='https://gestor-mysql-teste.herokuapp.com'">Cancelar
                     </button>
                 </div>
             </form:form>
